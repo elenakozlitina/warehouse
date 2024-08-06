@@ -37,8 +37,6 @@ class WareHouse ():
         return sum(self.stock.values())      
 
 
-
-
 class Material ():
     def __init__(self, label: str,unit: str, unit_price: float, quantity:float ):
         self.label = label 
@@ -60,8 +58,6 @@ class Material ():
 
 
 
-
-
 class InventoryManagement ():
     def __init__(self):
         self.warehouses = {}
@@ -79,9 +75,6 @@ class InventoryManagement ():
         except ValueError:
             source_warehouse.add_materials(material, quantity)
             raise
-
-
-
 
 
 General_Warehouse = WareHouse("General", 20000)
