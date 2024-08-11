@@ -4,8 +4,6 @@ from  WH_InventoryManagement_class import InventoryManagement
 
 General_Warehouse = WareHouse("General", 20000)
 Factory_Warehouse = WareHouse("Factory", 1000)
-#нужно сделать как-то так чтобы при добавлении материала он автоматически заносился на обычный склад
-# потому что так есть возможность потерять его как мы умудрились уже 
 coffee = Material("coffee", unit = "kg", unit_price = 200, quantity= 300, warehouse= General_Warehouse)
 pack_0_25 = Material("pack 0.25", unit = "pc", unit_price=3, quantity = 200, warehouse= Factory_Warehouse)
 
